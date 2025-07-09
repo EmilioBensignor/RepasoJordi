@@ -3,49 +3,81 @@
 <head>
     <title>Titulo de la pagina</title>
     <style>
-        table {
-            border: 1px solid black;
+        .producto {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background-color: beige;
+            border-radius: 24px;
+            border: 2px solid black;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        .producto p:first-child {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+        .producto p{
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Titulo</h1>
-    <p>Parrafo</p>
-    <ul>
-        <li>Lista</li>
-        <li>No</li>
-        <li>Ordenada</li>
-    </ul>
-    <ol>
-        <li>Lista</li>
-        <li>Ordenada</li>
-    </ol>
-    <a href="#">Link</a>
-    <p>Texto en <b>negrita</b></p>
-    <p>Texto en <i>cursiva</i></p>
-    <img src="" alt="Imagen">
-    <table>
-        <tr>
-            <th>Columna 1</th>
-            <th>Columna 2</th>
-        </tr>
-        <tr>
-            <td>Fila 1, Columna 1</td>
-            <td>Fila 1, Columna 2</td>
-        </tr>
-        <tr>
-            <td>Fila 2, Columna 1</td>
-            <td>Fila 2, Columna 2</td>
-        </tr>
-    </table>
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Laboriosam modi autem, ex alias adipisci
-            laborum impedit dolorum dolorem. <rb>Rerum voluptas facere <br> laudantium magnam explicabo a fugit! Natus
-                fuga sit alias.
-        </p>
-    </div>
+    <h1 class="colorprincipal">Titulo<h1>
+            <p style="color: red">Parrafo</p>
+            <p style="color: blue; font-size: 50px">Parrafo</p>
+
+            <ul>
+                <li>Lista</li>
+                <li>No</li>
+                <li>Ordenada</li>
+            </ul>
+            <ol>
+                <li>Lista</li>
+                <li>Ordenada</li>
+            </ol>
+            <a href="#">Link</a>
+            <p class="parrafito">Texto en <b>negrita</b></p>
+            <p>Texto en <strong>negrita</strong></p>
+            <p>Texto en <i>cursiva</i></p>
+            <img src="" alt="Imagen" />
+            <table>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Miércoles</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>Pecho</td>
+                    <td>Pierna derecha</td>
+                    <td>Espalda</td>
+                </tr>
+                <tr>
+                    <td>Bicep</td>
+                    <td>Pierna izquierda</td>
+                    <td>Tricep</td>
+                </tr>
+                <tr>
+                    <td>Comer huevos</td>
+                    <td>Prote</td>
+                    <td>Yogurt</td>
+                </tr>
+            </table>
+
+            <div class="producto">
+                <h1>Titulo</h1>
+                <img src="./Tema1/oneday.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores maiores, vero porro nisi odio maxime numquam ipsa quo sequi nulla a, ratione, quas laboriosam natus nobis officiis expedita voluptatum.</p>
+            </div>
 </body>
 
 </html>
